@@ -87,10 +87,14 @@ curl -s http://localhost:3000/api/results | jq
 ```
 
 You ll get this..
-### Dashboard
-![Home Page](public/Screenshot 2025-02-11 at 1.15.11.png)
+![curls](public/Screenshot 2025-02-11 at 1.15.11.png)
 
 ## App Imgs
+### Dark/Light toggle button (go for dark, light is ugly :})
+<p align="center">
+  <img src="public/light_dark.gif" width="1000" alt="Dark/Light Mode Toggle">
+</p>
+
 ### Dashboard
 ![Home Page](public/home.png)
 
@@ -102,11 +106,6 @@ You ll get this..
 
 ### Sorting
 ![Home Page](public/sorting.png)
-
-### Dark/Light toggle button (go for dark, light is ugly :})
-<p align="center">
-  <img src="public/light_dark.gif" width="1000" alt="Dark/Light Mode Toggle">
-</p>
 
 
 Enjoy :]
