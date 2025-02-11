@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Box, useTheme } from "@mui/material";
-import { JSX, ReactNode } from "react";
+import { JSX } from "react";
 import { LayoutProps } from "@/pages/types/match";
 
 /**

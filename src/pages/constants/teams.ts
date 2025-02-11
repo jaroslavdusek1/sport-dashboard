@@ -1,5 +1,3 @@
-import { Facebook, Twitter, Instagram, LinkedIn } from "@mui/icons-material";
-
 /**
  * Mapping of team names to their associated colors.
  */

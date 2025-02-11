@@ -17,6 +17,7 @@ import {
 } from "@mui/material";
 import { Match, ResultsTableProps } from "@/pages/types/match";
 import { TEAM_COLORS } from "@/pages/constants/teams";
+import { SelectChangeEvent } from "@mui/material";
 
 /**
  * ResultsTable component that displays a list of match results with sorting and filtering options.
@@ -49,11 +50,11 @@ export default function ResultsTable({ matches }: ResultsTableProps): JSX.Elemen
      *
      * @param {React.ChangeEvent<{ value: unknown }>} event - The change event.
      */
-    const handleFilterChange = (event: any): void => {
+     const handleFilterChange = (event: SelectChangeEvent<string>): void => {
         const team = event.target.value;
         setSelectedTeam(team);
         setLoading(true);
-
+    
         setTimeout(() => {
             if (team === "All") {
                 setFilteredMatches(matches);

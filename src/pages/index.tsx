@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Button, Container, Typography } from "@mui/material";
 import { useTheme, Theme } from "@mui/material/styles";
 import { SxProps } from "@mui/system";
 import { JSX } from "react";
