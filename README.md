@@ -98,7 +98,7 @@ You ll get this..
 ![curls](public/curls.png)
 
 ## App Imgs
-#### Dark/Light toggle button (go for dark, light is ugly :})
+#### Dark/Light toggle button (go for dark, light is ugly :--})
 <p align="center">
   <img src="public/light_dark.gif" width="1000" alt="Dark/Light Mode Toggle">
 </p>
@@ -112,7 +112,7 @@ You ll get this..
 #### Filtering
 ![Home Page](public/filtering.png)
 
-#### Sorting
+#### Sorting (asc, desc)
 ![Home Page](public/sorting.png)
 
 
