@@ -1,7 +1,7 @@
 import { Box, Typography, IconButton, useTheme } from "@mui/material";
 import { Facebook, Twitter, Instagram, LinkedIn } from "@mui/icons-material";
 import { JSX } from "react";
-import { FOOTER_LINKS } from "@/pages/constants/teams";
+import { FOOTER_LINKS } from "@/constants/teams";
 
 const socialLinks = [
     { icon: <Facebook />, href: "https://www.facebook.com", color: "#1877F2" },

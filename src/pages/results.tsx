@@ -1,7 +1,7 @@
 import { Container, Typography } from "@mui/material";
 import { GetServerSideProps, GetServerSidePropsResult } from "next";
 import ResultsTable from "@/components/ResultsTable";
-import { CONFIG } from "./constants/config";
+import { CONFIG } from "../constants/config";
 import { JSX } from "react";
 
 /**

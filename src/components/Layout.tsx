@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Box, useTheme } from "@mui/material";
 import { JSX } from "react";
-import { LayoutProps } from "@/pages/types/match";
+import { LayoutProps } from "@/types/match";
 
 /**
  * Layout component that wraps pages with a Navbar and Footer.

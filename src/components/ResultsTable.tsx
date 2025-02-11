@@ -15,8 +15,8 @@ import {
     CircularProgress,
     TableSortLabel
 } from "@mui/material";
-import { Match, ResultsTableProps } from "@/pages/types/match";
-import { TEAM_COLORS } from "@/pages/constants/teams";
+import { Match, ResultsTableProps } from "@/types/match";
+import { TEAM_COLORS } from "@/constants/teams";
 import { SelectChangeEvent } from "@mui/material";
 
 /**
