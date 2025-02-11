@@ -15,8 +15,8 @@ Build on MacOS Sequoia 15.0.1
 │   │   ├── index.tsx      # Homepage
 │   │   ├── results.tsx    # Results page with server-side rendering
 │   │   ├── api/           # API endpoints (Mock data)
-│   │   ├── constants/     # Configuration files (API endpoints, team colors)
-│   │   ├── types/         # Type definitions
+│   ├── constants/         # Configuration files (API endpoints, team colors)
+│   ├── types/             # Type definitions
 │   ├── styles/            # Global styles (CSS)
 │── public/                # Static assets (images, GIFs, etc.)
 │── tsconfig.json          # TypeScript configuration
