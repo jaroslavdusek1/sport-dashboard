@@ -26,8 +26,7 @@ Build on MacOS Sequoia 15.0.1
 ```
 
 ## Frontend Architecture
-The frontend is built with React (TypeScript) and Material UI for styling. It provides a dynamic, interactive user interface with the following structure:  
-The frontend is built with Next.js (TypeScript) and Material UI for styling. It provides a dynamic, interactive user interface with the following structure:
+The frontend is built with Next.js (TypeScript) and Material UI for styling. It provides a dynamic, interactive UI with the following structure:
 
 - Pages (/pages) – Implements individual views (e.g., Home, Results).
 - Components (/components) – Reusable UI elements like Navbar, Footer, ResultsTable.
@@ -87,24 +86,24 @@ curl -s http://localhost:3000/api/results | jq
 ```
 
 You ll get this..
-![curls](public/Screenshot 2025-02-11 at 1.15.11.png)
+![curls](public/curls.png)
 
 ## App Imgs
-### Dark/Light toggle button (go for dark, light is ugly :})
+#### Dark/Light toggle button (go for dark, light is ugly :})
 <p align="center">
   <img src="public/light_dark.gif" width="1000" alt="Dark/Light Mode Toggle">
 </p>
 
-### Dashboard
+#### Dashboard
 ![Home Page](public/home.png)
 
-### Results
+#### Results
 ![Home Page](public/results.png)
 
-### Filtering
+#### Filtering
 ![Home Page](public/filtering.png)
 
-### Sorting
+#### Sorting
 ![Home Page](public/sorting.png)
 
 
