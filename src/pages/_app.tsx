@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { AppProps } from "next/app";
 import Layout from "@/components/Layout";
 import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
@@ -56,6 +57,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
     return (
         <ThemeProvider theme={theme}>
+            <Head>
+                <title>Sport Dashboard</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </Head>
             <CssBaseline />
             <Layout darkMode={darkMode} toggleDarkMode={toggleDarkMode}>
                 <Component {...pageProps} />
