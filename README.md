@@ -85,10 +85,12 @@ You can retrieve match data directly from the API using cURL in the terminal.
 1️⃣ Basic cURL request
 This command fetches match results from the API in raw JSON format:
 ```bash
+curl -X GET http://127.0.0.1:3000/api/results
 curl -X GET http://localhost:3000/api/results
 ```
 2️⃣ Formatted JSON output using jq
 ```bash
+curl -s http://127.0.0.1:3000/api/results | jq
 curl -s http://localhost:3000/api/results | jq
 ```
 
