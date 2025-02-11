@@ -2,6 +2,13 @@
 Sport Dashboard is a web application that provides sports match results with filtering, sorting, and dark/light mode support.  
 It is built using modern web technologies and offers an interactive, user-friendly experience.
 
+## Live Deployment 🌍🚀
+
+The app has been deployed and is running in the cloud,
+You can access it here:  
+
+👉 **[Sport Dashboard Live](https://sport-dashboard-nw53.vercel.app/)**  
+
 ### Build on
 Build on MacOS Sequoia 15.0.1
 
