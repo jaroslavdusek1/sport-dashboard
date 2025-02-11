@@ -1,40 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Sport Dashboard
+Sport Dashboard is a web application that provides sports match results with filtering, sorting, and dark/light mode support.  
+It is built using modern web technologies and offers an interactive, user-friendly experience.
 
-## Getting Started
+### Build on
+Build on MacOS Sequoia 15.0.1
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Files structure
+```sport-dashboard/
+│── src/
+│   ├── components/        # Reusable UI components (Navbar, Footer, ResultsTable, etc.)
+│   ├── pages/             # Main pages (Home, Results, API routes)
+│   │   ├── _app.tsx       # Global app wrapper
+│   │   ├── _document.tsx  # Custom document structure
+│   │   ├── index.tsx      # Homepage
+│   │   ├── results.tsx    # Results page with server-side rendering
+│   │   ├── api/           # API endpoints (Mock data)
+│   │   ├── constants/     # Configuration files (API endpoints, team colors)
+│   │   ├── types/         # Type definitions
+│   ├── styles/            # Global styles (CSS)
+│── public/                # Static assets (images, GIFs, etc.)
+│── tsconfig.json          # TypeScript configuration
+│── package.json           # Dependencies and scripts
+│── .gitignore             # Files to be ignored in Git
+│── README.md              # Documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Frontend Architecture
+The frontend is built with React (TypeScript) and Material UI for styling. It provides a dynamic, interactive user interface with the following structure:  
+The frontend is built with Next.js (TypeScript) and Material UI for styling. It provides a dynamic, interactive user interface with the following structure:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Pages (/pages) – Implements individual views (e.g., Home, Results).
+- Components (/components) – Reusable UI elements like Navbar, Footer, ResultsTable.
+- Constants (/constants) – Stores reusable values (e.g., team colors, API URLs).
+- API (/pages/api) – Next.js API routes for fetching match results.
+etc..
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Step-by-Step Setup
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+1. Clone the Repository
+First open a new terminal window and clone the repository:
+```bash
+git clone https://github.com/jaroslavdusek1/sport-dashboard.git
+cd sport-dashboard
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install Dependencies
+```bash
+npm install
+```
+or
+```bash
+yarn install
+```
 
-## Learn More
+3. Start the development server
+```bash
+npm run dev
+```
+or
+```bash
+yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+The application will start and be accessible at:
+Frontend: [http://localhost:3000](http://localhost:3000)  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### Verify a running application via netstat:
+```bash
+Linux/Mac
+netstat -tuln | grep 3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+On Mac (Alternative with lsof):
+lsof -i :3000
+```
+## Fetching Data via Terminal (cURL)
+You can retrieve match data directly from the API using cURL in the terminal.
 
-## Deploy on Vercel
+1️⃣ Basic cURL request
+This command fetches match results from the API in raw JSON format:
+```bash
+curl -X GET http://localhost:3000/api/results
+```
+2️⃣ Formatted JSON output using jq
+```bash
+curl -s http://localhost:3000/api/results | jq
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You ll get this..
+### Dashboard
+![Home Page](public/Screenshot 2025-02-11 at 1.15.11.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## App Imgs
+### Dashboard
+![Home Page](public/home.png)
+
+### Results
+![Home Page](public/results.png)
+
+### Filtering
+![Home Page](public/filtering.png)
+
+### Sorting
+![Home Page](public/sorting.png)
+
+### Dark/Light toggle button (go for dark, light is ugly :})
+<p align="center">
+  <img src="public/light_dark.gif" width="1000" alt="Dark/Light Mode Toggle">
+</p>
+
+
+Enjoy :]
